@@ -1,0 +1,847 @@
+*
+{
+    padding:0;
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    margin: 0;
+}
+
+/* Header Starts Here */
+.header{
+    width: 100%;
+    height:35px;
+    background-color:#181818; 
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+.header li{
+    padding-right: 20px;
+}
+    
+#icon{
+    width:30px;
+    height:30px;
+    padding-top:8px;
+    text-align: center;
+    color: lightgray;
+}
+#icon2{
+    width:30px;
+    height:30px;
+    text-align: center;
+    cursor: pointer;
+}
+#icon:hover {
+  color: #f3f3f3;
+  cursor: pointer;
+}
+
+
+/* sub-header starts here */
+
+.sub_header{
+    background-color: #fff ;
+    height: 55px;
+    align-items: center;
+    display: flex;
+}
+.sub_header ul{
+    display: flex;
+    list-style: none;
+    padding-left: 20px;
+}
+.sub_header_list{
+    padding-left: 40px;
+    font-family: fantasy;
+    font-size: large;
+    line-height: 40px;
+}
+#icon3{
+    width:40px;
+    height:40px;
+    padding-top:6px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+.logo{
+    width: 230px;
+    height: 30px;
+    align-items: center;
+}
+
+#icon3:hover {
+  cursor:pointer;
+  color: #ff4747;
+  width: 45px;
+  height: 45px;
+}
+
+/* Drop Down*/
+
+.dropdown_p:hover {
+  color: #ff4747;
+}
+.dropdown_e{
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 220px;
+  height: auto;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  background-color: white;
+  opacity: 90%;
+  padding: 10px 20px;
+  
+}
+.dropdown_e1{
+  font-family:"FS Industrie W05 Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 600px;
+  color: black;
+}
+.dropdown_e1 p1{
+  color: black;
+  font-weight:600;
+  font-size: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+}
+.dropdown_p:hover .dropdown_e{
+  display: block;
+} 
+
+/* Drop Down End Here*/
+
+/* Header Ends Here */
+
+/* Video Content Starts Here */
+.video_container{
+    width: auto;
+    height: auto;
+    background-color: black;
+}
+.back{
+  z-index: 1;
+}
+
+.video{
+    width:100%;
+    height: 88vh;
+    object-fit: cover;
+    filter: brightness(55%);
+    position: absolute;
+}
+.overlay_items{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay_items img{
+    z-index: 1;
+    width: 130px;
+    height: 130px;
+}
+.overlay_text{
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay_text h1{
+    z-index: 1;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 55px;
+}
+.overlay_para{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay_para p{
+    z-index: 1;
+    color: #fff;
+    font-family: "FS Industrie W05 Regular", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+}
+.overlay_para l{
+    color: #E31837;
+}
+.images_collage{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;   
+    row-gap: 10px;
+    column-gap: 10px; 
+}
+
+.images_collage img{
+  transition: 0.5s;
+}
+
+.img1{
+    width: 326.31px;
+    height: 326.31px;
+    z-index: 1;
+    filter: brightness(75%);
+    position: relative;
+    overflow: hidden;
+}
+.img1:before{
+  content:"";
+  background-image: url(Images/Logo/nhl.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+.img1:hover  img{
+  transform: scale(1.1);
+  z-index: -1;
+
+}
+.img1:hover{
+  filter: brightness(100%);
+}
+
+.img2{
+  width: 326.31px;
+  height: 326.31px;
+  z-index: 1;
+  filter: brightness(75%);
+  position: relative;
+  overflow: hidden; 
+}
+.img2::before{
+content:"";
+background-image: url(Images/Logo/fifa-23-logo-white.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+width: 100%;
+height: 100%;
+z-index: 1;
+position: absolute;
+}
+.img2:hover  img{
+transform: scale(1.1);
+z-index: -1;
+}
+.img2:hover{
+filter: brightness(100%);
+}
+
+.img3{
+  width: 326.31px;
+  height: 326.31px;
+  z-index: 1;
+  filter: brightness(75%);
+  position: relative;
+  overflow: hidden; 
+}
+.img3::before{
+content:"";
+background-image: url(Images/Logo/madden.webp);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+width: 100%;
+height: 100%;
+z-index: 1;
+position: absolute;
+}
+.img3:hover  img{
+transform: scale(1.1);
+z-index: -1;
+}
+.img3:hover{
+filter: brightness(100%);
+}
+
+.img4{
+  width: 326.31px;
+  height: 326.31px;
+  z-index: 1;
+  filter: brightness(75%);
+  position: relative;
+  overflow: hidden; 
+}
+.img4::before{
+content:"";
+background-image: url(Images/Logo/f122-gamebox-logo.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+width: 100%;
+height: 100%;
+z-index: 1;
+position: absolute;
+}
+.img4:hover  img{
+transform: scale(1.1);
+z-index: -1;
+}
+.img4:hover{
+filter: brightness(100%);
+}
+
+.img5{
+  width: 326.31px;
+  height: 326.31px;
+  z-index: 1;
+  filter: brightness(75%);
+  position: relative;
+  overflow: hidden; 
+}
+.img5::before{
+content:"";
+background-image: url(Images/Logo/fifa-22-logo-white.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+width: 100%;
+height: 100%;
+z-index: 1;
+position: absolute;
+}
+.img5:hover  img{
+transform: scale(1.1);
+z-index: -1;
+}
+.img5:hover{
+filter: brightness(100%);
+}
+
+.img6{
+  width: 326.31px;
+  height: 326.31px;
+  z-index: 1;
+  filter: brightness(75%);
+  position: relative;
+  overflow: hidden; 
+}
+.img6::before{
+content:"";
+background-image: url(Images/Logo/nhl.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+width: 100%;
+height: 100%;
+z-index: 1;
+position: absolute;
+}
+.img6:hover  img{
+transform: scale(1.1);
+z-index: -1;
+}
+.img6:hover{
+filter: brightness(100%);
+}
+
+.img7{
+  width: 326.31px;
+  height: 326.31px;
+  z-index: 1;
+  filter: brightness(75%);
+  position: relative;
+  overflow: hidden; 
+}
+.img7::before{
+content:"";
+background-image: url(Images/Logo/ufc.webp);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+width: 100%;
+height: 100%;
+z-index: 1;
+position: absolute;
+}
+.img7:hover  img{
+transform: scale(1.1);
+z-index: -1;
+}
+.img7:hover{
+filter: brightness(100%);
+}
+
+.img8{
+  width: 326.31px;
+  height: 326.31px;
+  z-index: 1;
+  filter: brightness(75%);
+  position: relative;
+  overflow: hidden; 
+}
+.img8::before{
+content:"";
+background-image: url(Images/Logo/pga.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+width: 100%;
+height: 100%;
+z-index: 1;
+position: absolute;
+}
+.img8:hover  img{
+transform: scale(1.1);
+z-index: -1;
+}
+.img8:hover{
+filter: brightness(100%);
+}
+
+.img9{
+  width: 326.31px;
+  height: 326.31px;
+  z-index: 1;
+  filter: brightness(75%);
+  position: relative;
+  overflow: hidden; 
+}
+.img9::before{
+content:"";
+background-image: url(Images/Logo/f122-gamebox-logo.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+width: 100%;
+height: 100%;
+z-index: 1;
+position: absolute;
+}
+.img9:hover  img{
+transform: scale(1.1);
+z-index: -1;
+}
+.img9:hover{
+filter: brightness(100%);
+}
+
+.rela{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.button {
+    border-radius: 2px;
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "FS Industrie W05 Regular", sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    width: 200px;
+    height: 59px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 48px;
+    border-color: #fff;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* Video Ends Here*/
+
+  /*Mobile Games Starts here*/
+
+  .icon_red:hover{
+    scale: 110%;
+  }
+  .button2:hover{
+    scale: 110%;
+  }
+
+
+  .bar{
+    width: 100%;
+    height: 112px;
+    position: absolute;
+  }
+  .bar_text{
+    display: flex;
+    justify-content: space-around;
+  }
+  .bar_text p{
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 112px;
+    color: white;
+  }
+  .sub_bar_text{
+    z-index: 1;
+    align-content: center;
+    display: flex;
+    margin-top: 30px;
+    
+  }
+  .button2{
+    width: 160px;
+    height: 59px;
+    font-family: "FS Industrie W05 Regular", sans-serif;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-left:30px ;
+  }
+  .images_collage2{
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 910px;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  .root_collages2{
+    display: flex;
+    justify-content: center;    
+  }
+  .heading2{
+    padding: 58px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 55px;
+    font-weight: 700;
+  }
+  .photos2{
+    width: 448px;
+    height: 448px;
+  }
+  .photos2 img{
+    transition: 0.5s;
+  }
+  .photos2:hover {
+    cursor: pointer;
+    background-image: url("Images/Logo/1.png");
+    filter:drop-shadow(15px 10px 5px #545454);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    z-index: 1;
+  }
+  .photos2:hover img{
+    opacity: 0;
+  }
+
+  .photos22{
+    width: 448px;
+    height: 448px;
+  }
+  .photos22 img{
+    transition: 0.5s;
+  }
+  .photos22:hover {
+    cursor: pointer;
+    background-image: url("Images/Logo/2.png");
+    filter:drop-shadow(15px 10px 5px #545454);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    z-index: 1;
+  }
+  .photos22:hover img{
+    opacity: 0;
+  }
+
+  .photos222{
+    width: 448px;
+    height: 448px;
+  }
+  .photos222 img{
+    transition: 0.5s;
+  }
+  .photos222:hover {
+    cursor: pointer;
+    background-image: url("Images/Logo/5.png");
+    filter:drop-shadow(15px 10px 5px #545454);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    z-index: 1;
+  }
+  .photos222:hover img{
+    opacity: 0;
+  }
+
+  .photos2222{
+    width: 448px;
+    height: 448px;
+  }
+  .photos2222 img{
+    transition: 0.5s;
+  }
+  .photos2222:hover {
+    cursor: pointer;
+    background-image: url("Images/Logo/6.png");
+    filter:drop-shadow(15px 10px 5px #545454);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    z-index: 1;
+  }
+  .photos2222:hover img{
+    opacity: 0;
+  }
+
+  /* Mobile games Ends here*/
+
+  /*news*/
+
+  .news_header li:hover{
+    background-color: lightgray;
+  }
+  .news{
+    background-color: #f3f3f3;
+    width: 100%;
+    height: auto;
+  }
+  .news_header{     
+    height: 60px;
+    width: 100%;  
+    border-bottom: 1px solid;
+    border-color: #545454;
+  }
+  .news_header ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .news_header ul li{
+    padding: 5px 30px;
+    border-right: 1px solid;
+    border-color: #181818;
+  }
+  .news_header ul li:nth-last-child(1){
+    border: none;
+  }
+  .photos3{
+    width: 351px;
+    height: 197px;
+  }
+  .block1{
+    background-color: #fff;
+    width: 351px;
+    height: 450px;
+    transition: 0.5s;
+  }
+  .block1:hover{
+    scale: 105%;
+  }
+  .news_block{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  .news_body{
+    display: flex;
+    justify-content: center;
+    margin: 64px;
+  }
+  .button3{
+    width: 160px;
+    height: 59px;
+    font-family: "FS Industrie W05 Regular", sans-serif;
+    background-color: transparent;
+    border-color: black;
+    color: black;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-left:30px ;
+    margin-bottom: 64px;
+  }
+  .button3:hover{
+    scale: 105%;
+  }
+
+  .block_head{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 20px;
+  }
+  .block_elements{
+    font-family: "FS Industrie W05 Regular", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+    line-height: 26px;
+  }
+  .block_content{
+    margin: 15px 20px;
+    font-family: "FS Industrie W05 Regular", sans-serif;
+    line-height: 22px;
+  }
+  .rgb_bar{
+    width: 100%;
+    height: 112px;
+    position: absolute;
+  }
+  .button4{
+    width: 160px;
+    height: 59px;
+    font-family: "FS Industrie W05 Regular", sans-serif;
+    background-color: #DC143C;
+    color: #FFFFFF;
+    border: none;
+    font-size: 14px;
+    z-index: 1;
+    margin-left: 300px;
+    border-radius: 4px;
+  }
+
+  .button4:hover{
+    scale: 105%;
+  }
+
+  .rgb_bar_elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 33px;
+  }
+  .rgb_bar_elements p{
+    z-index: 1;
+    margin-right:100px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  .footer1{
+    background-color: #f3f3f3;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .footer1_left_section ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-family: "FS Industrie W05 Regular", sans-serif;
+    font-size: 17px;
+    margin-top: 41px;
+    margin-bottom: 129px;
+    margin-right:108px ;
+  }
+  .footer1_left_section ul li{
+    padding-left: 30px;
+  }
+  .footer1_right_section p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 41px;
+    margin-left: 108px;
+    
+  }
+
+  .footer1_right_section ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  .footer1_right_section ul li{
+    padding: 25px;
+  }
+
+  .footer1_right_section ul li:hover{
+    scale: 150%;
+
+  }
+  .footer2{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 200px;
+    margin-bottom: 60px;
+  }
+  .pink_logo{
+    width: 60px;
+    height: 60px;
+  }
+  .footer2 ul{
+    display: flex;
+    list-style: none;
+   
+  }
+  .footer2 ul li{
+    padding-right: 50px;
+  }
+  .segment{
+    padding-left: 40px;
+    font-family: "FS Industrie W05 Regular", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .button5{
+    width: 160px;
+    height: 59px;
+    font-family: "FS Industrie W05 Regular", sans-serif;
+    background-color: transparent;
+    color: black;
+    border: 1px solid;
+    border-color: lightgray;
+    font-size: 14px;
+  }
+
+
+
+  
+
+  
+
+
+
